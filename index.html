@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AppyMations</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/ico" href="favicon.ico">
+</head>
+<body>
+  <button class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode">
+    <img class="theme-icon theme-icon-light" src="img/lightmode.png" alt="" />
+    <img class="theme-icon theme-icon-dark" src="img/darkmode.png" alt="" />
+  </button>
+  <main class="background" aria-hidden="true">
+    <div class="square" style="--x:12%; --y:11%; --size:72px;"></div>
+    <div class="square" style="--x:25%; --y:28%; --size:78px;"></div>
+    <div class="square" style="--x:44%; --y:16%; --size:72px;"></div>
+    <div class="square" style="--x:63%; --y:13%; --size:72px;"></div>
+    <div class="square" style="--x:87%; --y:13%; --size:76px;"></div>
+
+    <div class="square" style="--x:15%; --y:51%; --size:90px;"></div>
+    <div class="square" style="--x:39%; --y:48%; --size:60px;"></div>
+    <div class="square" style="--x:54%; --y:40%; --size:72px;"></div>
+    <div class="square" style="--x:71%; --y:28%; --size:90px;"></div>
+    <div class="square" style="--x:74%; --y:50%; --size:72px;"></div>
+    <div class="square" style="--x:87%; --y:52%; --size:100px;"></div>
+
+    <div class="square" style="--x:25%; --y:73%; --size:90px;"></div>
+    <div class="square" style="--x:46%; --y:66%; --size:72px;"></div>
+    <div class="square" style="--x:61%; --y:65%; --size:90px;"></div>
+    <div class="square" style="--x:9%; --y:86%; --size:72px;"></div>
+    <div class="square" style="--x:38%; --y:88%; --size:90px;"></div>
+    <div class="square" style="--x:71%; --y:87%; --size:72px;"></div>
+    <div class="square" style="--x:90%; --y:78%; --size:90px;"></div>
+    <div class="square square-blur" style="--x:6%; --y:24%; --size:110px;"></div>
+    <div class="square square-blur" style="--x:20%; --y:42%; --size:130px;"></div>
+    <div class="square square-blur" style="--x:33%; --y:13%; --size:95px;"></div>
+    <div class="square square-blur" style="--x:50%; --y:53%; --size:120px;"></div>
+    <div class="square square-blur" style="--x:66%; --y:36%; --size:105px;"></div>
+    <div class="square square-blur" style="--x:81%; --y:67%; --size:140px;"></div>
+    <div class="square square-blur" style="--x:95%; --y:34%; --size:100px;"></div>
+    <div class="square square-blur" style="--x:56%; --y:84%; --size:125px;"></div>
+  </main>
+
+  <div class="site-ui">
+    <img src="img/logo.png" alt="AppyMations" class="logo" />
+
+    <section class="content-card">
+      <nav class="tabs" aria-label="Main navigation">
+        <button class="tab-button active" type="button" data-tab="home" aria-selected="true">HOME</button>
+        <button class="tab-button" type="button" data-tab="news" aria-selected="false">NEWS</button>
+        <button class="tab-button" type="button" data-tab="uploads" aria-selected="false">UPLOADS</button>
+      </nav>
+
+      <div class="tab-content" id="tab-content" aria-live="polite"></div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
